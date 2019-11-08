@@ -13,7 +13,6 @@ To run your script:
 
 ```
 /path/to/yourscript.sh
- 
 ```   
     
 Since `.` refers to the current directory: if `yourscript.sh` is in the current directory, you can simplify this to:
@@ -24,6 +23,7 @@ Since `.` refers to the current directory: if `yourscript.sh` is in the current 
 ## Preview
 
 Preview of empty_folder.sh:
+
 ![image](https://user-images.githubusercontent.com/19567048/68481745-4f4b9900-0238-11ea-921d-939b7ed527a6.png)
 
 
