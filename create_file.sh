@@ -11,23 +11,28 @@ install_pandoc () {
 echo "Which file do you wanna make?"
 
 PS3='Please enter your choice: '
-options=("Word(.docx)" "Text (.txt)" "Pdf (.pdf)" "Quit")
+options=("Microsoft Word(.docx)" "Microsoft Powerpoint(.pptx)" "Text (.txt)" "LibreOffice (.odt)" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "Word(.docx)")
-            echo "You chose create a Word file"
+        "MS Word(.docx)")
+            echo "You chose to create a Word file"
 		install_pandoc
-		#> file.docx
 		echo "" | pandoc -o Word.docx
+            ;;
+	"Microsoft Powerpoint(.pptx)")
+            echo "You chose to create a Word file"
+		install_pandoc
+		echo "" | pandoc -o Powerpoint.pptx
             ;;
         "Text (.txt)")
             echo "you chose choice 2"
-		> MyText.txt
+		> Text.txt
             ;;
-        "Pdf (.pdf)")
+        "LibreOffice (.odt)")
             echo "you chose choice $REPLY which is $opt"
-		> MyPdf.pdf
+		install_pandoc
+		echo "" | pandoc -o LibreOffice.odt
             ;;
         "Quit")
             break
