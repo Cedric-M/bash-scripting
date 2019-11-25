@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script will ask the name of the folder you want to empty, then erase all the data it may contain and check if it has successfully been emptied.
+# This script will ask you what type of file you intend to create, then it does it for you, what more can you ask for? :)
 # Usage: ./<scriptfilename>
 
 install_pandoc () {
