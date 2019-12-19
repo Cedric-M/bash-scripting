@@ -7,6 +7,13 @@ read gitpathfolder
 
 cd $gitpathfolder
 
+git init
+
+touch .gitignore
+
+git add .
+git commit -m "first commit"
+
 echo "Please enter your username:"
 read gitusername
 
