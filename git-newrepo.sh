@@ -1,5 +1,5 @@
 #!/bin/bash
-# Create a new repository from the command line
+# Create a new git repository from the command line
 
 mkdir gitfolder
 cd gitfolder
