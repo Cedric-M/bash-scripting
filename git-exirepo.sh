@@ -1,5 +1,17 @@
 #!/bin/bash
-# Push an existing repository from the command line
+# Push an existing git repository from the command line
 
-git remote add origin git@github.com:<username>/<reponame>.git
+
+echo "Please write down the path of the existing folder you wanna push:"
+read gitpathfolder
+
+cd $gitpathfolder
+
+echo "Please enter your username:"
+read gitusername
+
+echo "Please enter the name of your repo:"
+read gitreponame
+
+git remote add origin https://github.com/$gitusername/$gitreponame.git
 git push -u origin master
